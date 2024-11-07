@@ -1,0 +1,20 @@
+import turtle
+
+def draw_pattern(n):
+    if n>= min_size:
+        for i in range(3):
+            turtle.forward(n)
+            turtle.right(60)
+            draw_pattern(n / 2)
+            turtle.right(60)
+
+min_size = 10
+turtle.speed(0)
+turtle.left(60)
+turtle.shape("turtle")
+
+draw_pattern(100)
+
+turtle.done()
+
+#100, 50, 35
